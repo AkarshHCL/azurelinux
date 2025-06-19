@@ -51,13 +51,15 @@ Distribution:   Azure Linux
 
 Name:           nbdkit
 Version:        1.35.3
-Release:        6%{?dist}
+Release:        7%{?dist}
 Summary:        NBD server
 
 License:        BSD
 URL:            https://gitlab.com/nbdkit/nbdkit
 
 Source0:        http://libguestfs.org/download/nbdkit/%{source_directory}/%{name}-%{version}.tar.gz
+Patch0:  CVE-2025-47711.patch 
+Patch1:  CVE-2025-47712.patch
 
 Patch0:  CVE-2025-47711.patch 
 Patch1:  CVE-2025-47712.patch
